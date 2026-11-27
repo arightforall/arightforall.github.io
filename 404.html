@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="theme-color" content="#0E1F1E">
+<title>Page not found — A Right for All</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230E1F1E'/><path fill='%23EFEFEA' d='M16 27.4C16 27.4 3.8 19.6 3.8 12.4C3.8 8.6 6.9 5.5 10.7 5.5C13.1 5.5 15.1 6.8 16 8.6C16.9 6.8 18.9 5.5 21.3 5.5C25.1 5.5 28.2 8.6 28.2 12.4C28.2 19.6 16 27.4 16 27.4Z'/></svg>">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+  /* The same ground, type and rule as the homepage, at a fraction of the weight —
+     a wrong address should still land somewhere that is unmistakably this project. */
+  :root{
+    --room:#0E1F1E; --mast:#EFEFEA; --stock:#DAE3EA; --stock-2:#8D9CAD; --sky:#86B6EC;
+    --serif:'Charter','Iowan Old Style','Palatino Linotype',Palatino,Georgia,'Times New Roman',serif;
+  }
+  *{box-sizing:border-box}
+  html{font-size:106.25%}
+  body{
+    margin:0;min-height:100vh;min-height:100svh;background-color:var(--room);color:var(--stock);
+    font-family:var(--serif);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    padding:clamp(24px,7vmin,72px);text-align:center;position:relative;overflow-x:hidden;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;
+    background:radial-gradient(128% 115% at 57% 40%,#132722 0%,#0E1F1E 44%,#0A1817 100%);
+  }
+  main{display:flex;flex-direction:column;align-items:center;max-width:100%}
+  .name{max-width:100%;
+    margin:0;font-variant-caps:small-caps;letter-spacing:.22em;text-indent:.22em;font-weight:700;
+    font-size:clamp(1.25rem,4.4vw,2.5rem);line-height:1.12;color:var(--mast);
+  }
+  .rule{
+    width:min(34rem,78vw);height:1px;margin:clamp(14px,2.6vmin,22px) 0 clamp(20px,3.4vmin,30px);
+    border:0;background:linear-gradient(90deg,transparent,currentColor 12%,currentColor 88%,transparent);
+    color:rgba(218,227,234,.26);
+  }
+  p{margin:0;font-size:clamp(1rem,2.1vw,1.2rem);line-height:1.5;color:var(--stock-2);font-style:italic}
+  .home{
+    display:inline-block;margin-top:clamp(22px,4vmin,38px);color:var(--sky);
+    font-size:clamp(1rem,2.1vw,1.18rem);text-decoration:none;
+    border-bottom:1px solid rgba(134,182,236,.42);padding-bottom:.16em;
+  }
+  .home:hover,.home:focus-visible{border-bottom-color:var(--sky)}
+  .home:focus-visible{outline:2px solid var(--sky);outline-offset:6px;border-radius:2px}
+</style>
+</head>
+<body>
+<main>
+<h1 class="name">A Right for All</h1>
+<hr class="rule">
+<p>That page isn&rsquo;t here.</p>
+<a class="home" href="/">go to the homepage</a>
+
+</main>
+</body>
+</html>
